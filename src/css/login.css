@@ -1,0 +1,59 @@
+/* login.css */
+
+body {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.container h1 {
+    font-size: 28px; /* Ajusta el tamaño del texto de bienvenida */
+    margin-bottom: 20px; /* Espacio entre el texto de bienvenida y el contenido del formulario */
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen según tus preferencias */
+    margin-right: 20px; /* Espacio entre la imagen y el formulario */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px; /* Ajusta el tamaño del texto de las etiquetas */
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px; /* Ajusta el tamaño del espacio interior del campo de entrada */
+    margin-bottom: 15px; /* Ajusta el espacio entre los campos de entrada */
+    font-size: 16px; /* Ajusta el tamaño del texto del campo de entrada */
+    border: 2px solid #666; /* Ajusta el grosor del borde */
+    border-radius: 8px; /* Ajusta la curvatura de las esquinas del borde */
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    font-size: 16px;
+}

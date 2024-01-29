@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DI | Sistema de Gestión de Vacaciones</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+ <link rel="stylesheet" href="src/css/formularioEstilo.css">
+
+</head>
+<body>
+    <header>
+        <img src="src/media/DI.png" alt="Descripción de la imagen">
+    </header>
+
+    <div class="container">
+        <form id="vacationForm">
+            <div class="corridosHabiles">
+                <button type="button" onclick="submitCorridos()">Corridos</button>
+                <button type="button" onclick="submitHabiles()">Habiles</button>              
+            </div>
+            <div class="corridosHabilesCantidad">
+                <label for="cantCorridos">Cantidad Corridos: </label>
+                <input type="number" id="cantCorridos">
+                
+                <label for="cantHabiles">Cantidad Habiles: </label>
+                <input type="number" id="cantHabiles">
+            </div>
+            
+            
+            <div class="desdeHasta">
+                <label for="start">Desde:</label>
+                <input type="date" id="start" name="trip-start" value="2024-01-01"/>
+                
+                <label for="end">Hasta:</label>
+                <input type="date" id="end" name="trip-end" value="2024-02-01"/>
+            </div>
+            
+            <div class="textCalendario">
+                <p>Recorda poner en el calendario los días que no estarás</p>
+            </div>
+    
+            <div class="corridosHabiles">
+                <button type="button" onclick="submitLimpiar()">Limpiar</button>
+                <button type="button" onclick="submitFinalizar()">Finalizar</button>
+            </div>
+        </form>
+    </div>
+    
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.corridosHabilesCantidad,
+.desdeHasta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustes de margen para botones y campos dentro de las secciones */
+.corridosHabiles button,
+.corridosHabilesCantidad button,
+.desdeHasta button,
+.corridosHabiles label,
+.corridosHabilesCantidad label,
+.desdeHasta label,
+.corridosHabiles input,
+.corridosHabilesCantidad input,
+.desdeHasta input {
+    margin: 5px;
+}
+
+/* Estilo específico para el input de cantidad de corridos */
+.corridosHabilesCantidad input {
+    width: 50px;  
+}
+
+.corridosHabiles button {
+    width: 200px;  
+}

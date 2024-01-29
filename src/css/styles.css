@@ -1,0 +1,124 @@
+/* Reset de estilos para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+    padding: 20px; /* Aumentamos el padding para más espacio */
+    position: relative;
+}
+
+header img {
+    max-width: 100px; /* Ajustamos el ancho máximo de la imagen */
+    height: auto;
+    top: 20px;
+    left: 20px;
+}
+
+/* Estilos globales */
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 7vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px; /* Aumentamos el padding para más espacio */
+}
+
+.vacacionesTitulo {
+    display: flex;
+    font-size: 4vh;
+    padding: 15px;
+}
+
+.cantidadVacaciones{
+    font-size: 3vh;
+    padding: 20px;
+}
+
+/* Estilos de los botones */
+button {
+    padding: 12px; /* Aumentamos el padding para botones más grandes */
+    margin: 8px; /* Aumentamos el margen para más espacio entre botones */
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Botones verdes */
+button[type="button"][onclick^="submitAgregar"],
+button[type="button"][onclick^="submitTomarV"],
+button[type="button"][onclick^="submitFinalizar"],
+button[type="button"][onclick^="submitCorridos"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Botones rojos */
+button[type="button"][onclick^="submitHabiles"],
+button[type="button"][onclick^="submitLimpiar"] {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+/* Botones celestes */
+button[type="button"][onclick^="submitHabiles"] {
+    background-color: #2489fc;
+    color: #fff;
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px; /* Aumentamos el margen entre etiquetas */
+}
+
+input {
+    padding: 12px; /* Aumentamos el padding para campos de entrada más grandes */
+    margin-bottom: 15px; /* Aumentamos el margen entre campos de entrada */
+    border: 1px solid #666;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Estilos para el texto informativo */
+.textCalendario {
+    background-color: #555;
+    padding: 15px; /* Aumentamos el padding para más espacio */
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.textCalendario p {
+    color: #fff;
+}
+
+/* Estilos para los botones de acción */
+button[type="button"][onclick^="submitLimpiar"],
+button[type="button"][onclick^="submitFinalizar"] {
+    margin-top: 15px;
+}
+
+/* Estilo para los campos de fecha */
+input[type="date"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+}
