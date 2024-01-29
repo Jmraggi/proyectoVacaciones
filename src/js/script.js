@@ -39,3 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
     motivosParticularesDaysElement.textContent = `${motivosParticularesDays} Motivos Particulares`;
   }
   
+
+ 
+function submitTomarV() {
+  window.location.href = "page.html";
+}
+
+function redirectToIndex() {
+  window.location.href = "index.html";
+}
